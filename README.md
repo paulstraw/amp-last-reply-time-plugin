@@ -2,6 +2,8 @@
 
 An [Amp](https://ampcode.com) plugin that shows when the agent last replied as a button above the composer of each thread, e.g. `Last reply 3:42 PM` (or `Last reply Nov 3, 3:42 PM` on an earlier day). Click it to copy that reply. Works in the macOS app.
 
+![The last reply button above the composer, with its tooltip](docs/last-reply-button.png)
+
 - Thread messages carry no reliable timestamps, so the plugin records the time at the end of each turn. Those times are saved under `~/.cache/amp/plugin-cache/`, so they survive reloads and restarts.
 - A thread shows the button only after the plugin has seen one of its turns end.
 
